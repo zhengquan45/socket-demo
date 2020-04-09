@@ -16,6 +16,7 @@ public class HTTPServer {
     private Listener listener;
 
     public HTTPServer() {
+        System.out.println("访问 http://localhost:8080");
         try {
             server = new ServerSocket(PORT);
             listener = new Listener();
